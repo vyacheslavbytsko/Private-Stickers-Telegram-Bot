@@ -19,7 +19,6 @@ db = lite.connect('database.db')
 media_made = queue.Queue()
 
 botname = open("botname.txt").read().strip()
-freeslots = int(open("freeslots.txt").read().strip())
 
 stickerset_created_by_bot = "Created by @{botname}"
 
