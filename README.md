@@ -1,4 +1,4 @@
-# PrivSticksBot Telegram Bot
+# Private Stickers Telegram Bot
 
 Telegram bot to create private stickerpacks using InlineQuery feature.
 
@@ -25,5 +25,3 @@ You can use my bot via [this link](https://t.me/PrivSticksBot).
 1. Create or add stickerpack using `/createpack` or `/addpack`.
 2. Add stickers using `/addsticker`. You can also set their keywords and/or make them private.
 3. Mention `@PrivSticksBot` in any chat. You can also add some query to get relevant stickers e.g. `@PrivSticksBot cat`.
-
-_I decided not to publish original source code of this bot._
