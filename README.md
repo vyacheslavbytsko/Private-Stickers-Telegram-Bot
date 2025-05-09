@@ -18,6 +18,15 @@ Basic commands are:
 
 For more commands and their descriptions, head over to [@PrivSticksBot](https://t.me/PrivSticksBot).
 
+## How to install
+
+1. Clone the repo
+2. `pip install -r requirements.txt`
+3. create file `token.txt` with the token of your telegram bot
+4. create file `botname.txt` with the name of the bot e.g. PrivSticksBot
+5. create file `admins.txt` with line-separated Telegram ids of admins
+6. run bot: `python main.py`
+
 ## How to use
 
 You can use my bot via [this link](https://t.me/PrivSticksBot). 
