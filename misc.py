@@ -85,7 +85,6 @@ class Message:
         self.lang = self.user.lang
 
 
-# TODO make threaded
 async def photo2sticker(user: User, message: telegram.Message, func) -> None:
     if message.photo[-1].file_size > telegram.constants.FileSizeLimit.FILESIZE_DOWNLOAD:
         await message.reply_text(l10n("general.photo_is_too_big", user.lang))
@@ -138,6 +137,8 @@ async def photo2sticker(user: User, message: telegram.Message, func) -> None:
                 os.remove(filename)
             if os.path.isfile(filename_out):
                 os.remove(filename_out)
+            # TODO: l10n
+            await message.reply_text("Couldn't convert photo to sticker. Please try again.")
             raise e
 
 
@@ -218,6 +219,8 @@ async def video2sticker(user: User, message: telegram.Message, func) -> None:
                 os.remove(filename_out)
             if os.path.isfile(filename_logs+"-0.log"):
                 os.remove(filename_logs+"-0.log")
+            # TODO: l10n
+            await message.reply_text("Couldn't convert video to sticker. Please try again.")
             raise e
 
 
@@ -297,6 +300,8 @@ async def animation2sticker(user: User, message: telegram.Message, func) -> None
                 os.remove(filename_out)
             if os.path.isfile(filename_logs + "-0.log"):
                 os.remove(filename_logs + "-0.log")
+            # TODO: l10n
+            await message.reply_text("Couldn't convert animation to sticker. Please try again.")
             raise e
 
 

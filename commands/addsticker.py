@@ -50,7 +50,7 @@ async def send_sticker(message: Message, stickerpack: Stickerpack, pre_sent_stic
             await misc.animation2sticker(reply.user, reply.tgmessage,
                                      lambda sticker: choose_privacy(message, stickerpack, sticker))
         elif reply.tgmessage.document is not None:
-            # TODO l10n
+            # TODO: l10n
             await message.reply_text("Converting files to stickers is in development.")
             return
         else:
