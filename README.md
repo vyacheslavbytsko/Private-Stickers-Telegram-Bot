@@ -20,12 +20,13 @@ For more commands and their descriptions, head over to [@PrivSticksBot](https://
 
 ## How to install
 
-1. Clone the repo
-2. `pip install -r requirements.txt`
-3. create file `token.txt` with the token of your telegram bot
-4. create file `botname.txt` with the name of the bot e.g. PrivSticksBot
-5. create file `admins.txt` with line-separated Telegram ids of admins
-6. run bot: `python main.py`
+1. Make sure that `vlc` is installed
+2. Clone the repo
+3. `pip install -r requirements.txt`
+4. Create file `token.txt` with the token of your telegram bot
+5. Create file `botname.txt` with the name of the bot e.g. PrivSticksBot
+6. Create file `admins.txt` with line-separated Telegram ids of admins
+7. Run bot: `python main.py`
 
 ## How to use
 
