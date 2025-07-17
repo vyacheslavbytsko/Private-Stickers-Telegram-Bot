@@ -14,11 +14,14 @@ import telegram
 
 from l10n import l10n
 
-db = lite.connect('database.db')
+if not os.path.isfile('/app/data/privsticksbot.db'):
+    raise Exception('privsticksbot.db not found')
+
+db = lite.connect('/app/data/privsticksbot.db')
 
 media_made = queue.Queue()
 
-botname = open("botname.txt").read().strip()
+botname = "PrivSticksBot"
 
 stickerset_created_by_bot = "Created by @{botname}"
 
