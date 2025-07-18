@@ -4,7 +4,7 @@ from misc import Message
 
 
 async def command_adminshowallstickers(message: Message) -> None:
-    if message.user.id not in list(map(int, open("admins.txt").read().split(","))):
+    if message.user.id not in list(map(int, open("/app/data/admins.txt").read().split(","))):
         await message.reply_text(f"You ({message.user.id}) are not the admin of this bot.")
         return
 

@@ -137,7 +137,7 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 
 def start_bot() -> None:
-    application = Application.builder().token(open("token.txt").readline().strip()).build()
+    application = Application.builder().token(open("/app/data/token.txt").readline().strip()).build()
 
     application.add_handler(MessageHandler(filters.TEXT | filters.ATTACHMENT, manage_text_messages))
     application.add_handler(InlineQueryHandler(inline_query))
