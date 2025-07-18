@@ -10,7 +10,7 @@ RUN apk add --no-cache ffmpeg
 
 # Копируем зависимости и код внутрь контейнера
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r --root-user-action requirements.txt
+RUN pip install --root-user-action --no-cache-dir -r requirements.txt
 
 COPY . .
 
